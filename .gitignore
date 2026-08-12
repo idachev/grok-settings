@@ -1,0 +1,44 @@
+# Secrets / identity — never commit
+auth.json
+auth.json.lock
+mcp_credentials.json
+agent_id
+last-copy.txt
+
+# Runtime / process state
+*.lock
+active_sessions.json
+# Root conversation transcripts only (not memory/**/sessions/ summaries)
+/sessions/
+/logs/
+/memtrace/
+/upload_queue/
+worktrees.db
+/relocations/
+models_cache.json
+version.json
+tip_cursor.json
+slash-mru.json
+CHANGELOG.json
+CHANGELOG.md
+.config-init.lock
+.metadata_version
+managed_config.lock
+
+# Regenerable install artifacts
+/bin/
+/bundled/
+/vendor/
+/downloads/
+/docs/
+/completions/
+/marketplace-cache/
+/installed-plugins/*/
+!/installed-plugins/registry.json
+
+# Machine-local absolute paths
+trusted_folders.toml
+
+# All cross-session memory stays local only (project names + notes)
+# Keep on disk for Grok; never publish.
+/memory/

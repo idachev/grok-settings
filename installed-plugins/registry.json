@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "repos": {
+    "superpowers-21e2a56d": {
+      "kind": {
+        "type": "Git",
+        "url": "https://github.com/obra/superpowers.git",
+        "git_ref": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
+        "commit": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
+      },
+      "installed_at": "2026-07-27T04:54:11.634134031+00:00",
+      "updated_at": "2026-07-27T04:54:11.634134031+00:00",
+      "path": "/home/idachev/.grok/installed-plugins/superpowers-21e2a56d",
+      "plugins": {
+        "superpowers": {
+          "version": "6.2.0"
+        }
+      },
+      "marketplace": {
+        "source_url_or_path": "https://github.com/xai-org/plugin-marketplace.git",
+        "source_display_name": "xAI Official",
+        "plugin_subdir": "superpowers"
+      }
+    }
+  }
+}

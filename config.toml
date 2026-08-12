@@ -1,0 +1,26 @@
+[cli]
+installer = "internal"
+
+[marketplace]
+default_skills_installs_purged = true
+official_marketplace_auto_installed = true
+
+[[marketplace.sources]]
+name = "xAI Official"
+git = "https://github.com/xai-org/plugin-marketplace.git"
+
+[ui]
+max_thoughts_width = 120
+fork_secondary_model = "grok-4.5"
+yolo = false
+compact_mode = false
+permission_mode = "always-approve"
+
+[plugins]
+enabled = ["superpowers"]
+
+[memory]
+enabled = true
+
+[privacy]
+privacy_banner_acked = "2026-08-12T02:49:20Z"
