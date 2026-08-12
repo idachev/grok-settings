@@ -42,3 +42,6 @@ trusted_folders.toml
 # All cross-session memory stays local only (project names + notes)
 # Keep on disk for Grok; never publish.
 /memory/
+
+# Local tool state (Serena MCP, etc.)
+.serena/
