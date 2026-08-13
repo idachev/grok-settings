@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bin/context-usage-warn.sh",
+            "timeout": 120,
+            "env": {
+              "CONTEXT_WARN_PERCENT": "65",
+              "CONTEXT_WARN_EVERY": "3"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

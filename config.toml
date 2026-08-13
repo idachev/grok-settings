@@ -19,6 +19,9 @@ permission_mode = "always-approve"
 [plugins]
 enabled = ["superpowers"]
 
+[session]
+auto_compact_threshold_percent = 90
+
 [memory]
 enabled = true
 

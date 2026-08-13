@@ -45,3 +45,6 @@ trusted_folders.toml
 
 # Local tool state (Serena MCP, etc.)
 .serena/
+
+# Per-session hook state (context-warn fire counter)
+/hooks/state/
