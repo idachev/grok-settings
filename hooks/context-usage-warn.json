@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bin/context-usage-warn.sh",
+            "command": "~/bin/grok-context-warn.sh",
             "timeout": 120,
             "env": {
               "CONTEXT_WARN_PERCENT": "65",
