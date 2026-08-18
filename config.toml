@@ -27,3 +27,14 @@ enabled = true
 
 [privacy]
 privacy_banner_acked = "2026-08-12T02:49:20Z"
+
+[mcp_servers.serena]
+command = "uvx"
+args = [
+  "--from", "git+https://github.com/oraios/serena",
+  "serena", "start-mcp-server",
+  "--project-from-cwd",
+  "--context", "grok",
+  "--open-web-dashboard", "False",
+]
+startup_timeout_sec = 60

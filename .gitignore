@@ -48,3 +48,7 @@ trusted_folders.toml
 
 # Per-session hook state (context-warn fire counter)
 /hooks/state/
+
+# Local pre-edit config backups
+*.bak
+*.bak-*
