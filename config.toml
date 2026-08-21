@@ -15,9 +15,17 @@ fork_secondary_model = "grok-4.5"
 yolo = false
 compact_mode = false
 permission_mode = "always-approve"
+theme = "oscura-midnight"
 
 [plugins]
 enabled = ["superpowers"]
+disabled = [
+    "user/ea55787c/xmind-builder",
+    "user/14d1eee0/atlassian-tools",
+    "user/83ffb75f/ms-amplifier",
+    "user/d430b127/pdf2epub",
+    "user/5b0c2157/codex",
+]
 
 [session]
 auto_compact_threshold_percent = 90
@@ -31,10 +39,24 @@ privacy_banner_acked = "2026-08-12T02:49:20Z"
 [mcp_servers.serena]
 command = "uvx"
 args = [
-  "--from", "git+https://github.com/oraios/serena",
-  "serena", "start-mcp-server",
-  "--project-from-cwd",
-  "--context", "grok",
-  "--open-web-dashboard", "False",
+    "--from",
+    "git+https://github.com/oraios/serena",
+    "serena",
+    "start-mcp-server",
+    "--project-from-cwd",
+    "--context",
+    "grok",
+    "--open-web-dashboard",
+    "False",
 ]
 startup_timeout_sec = 60
+
+[skills]
+paths = []
+ignore = []
+disabled = [
+    "hashtag-researcher",
+    "image-mockup",
+]
+server_skill_dirs = []
+bundled_skill_dirs = []
