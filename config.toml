@@ -14,7 +14,7 @@ max_thoughts_width = 120
 fork_secondary_model = "grok-4.5"
 yolo = false
 compact_mode = false
-permission_mode = "always-approve"
+permission_mode = "auto"
 theme = "oscura-midnight"
 
 [plugins]
@@ -60,3 +60,7 @@ disabled = [
 ]
 server_skill_dirs = []
 bundled_skill_dirs = []
+
+[models]
+default = "grok-4.6"
+default_reasoning_effort = "medium"
