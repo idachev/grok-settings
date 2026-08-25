@@ -5,15 +5,15 @@
       "kind": {
         "type": "Git",
         "url": "https://github.com/obra/superpowers.git",
-        "git_ref": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
-        "commit": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
+        "git_ref": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+        "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797"
       },
-      "installed_at": "2026-07-27T04:54:11.634134031+00:00",
-      "updated_at": "2026-07-27T04:54:11.634134031+00:00",
-      "path": "/home/idachev/.grok/installed-plugins/superpowers-21e2a56d",
+      "installed_at": "2026-08-25T12:54:49.600268+00:00",
+      "updated_at": "2026-08-25T12:54:49.600268+00:00",
+      "path": "/Users/idachev/.grok/installed-plugins/superpowers-21e2a56d",
       "plugins": {
         "superpowers": {
-          "version": "6.2.0"
+          "version": "6.3.0"
         }
       },
       "marketplace": {

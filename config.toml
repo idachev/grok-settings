@@ -11,21 +11,14 @@ git = "https://github.com/xai-org/plugin-marketplace.git"
 
 [ui]
 max_thoughts_width = 120
-fork_secondary_model = "grok-4.5"
+fork_secondary_model = "grok-4.6"
 yolo = false
 compact_mode = false
-permission_mode = "auto"
+permission_mode = "always-approve"
 theme = "oscura-midnight"
 
 [plugins]
 enabled = ["superpowers"]
-disabled = [
-    "user/ea55787c/xmind-builder",
-    "user/14d1eee0/atlassian-tools",
-    "user/83ffb75f/ms-amplifier",
-    "user/d430b127/pdf2epub",
-    "user/5b0c2157/codex",
-]
 
 [session]
 auto_compact_threshold_percent = 90
@@ -63,4 +56,4 @@ bundled_skill_dirs = []
 
 [models]
 default = "grok-4.6"
-default_reasoning_effort = "medium"
+default_reasoning_effort = "high"
