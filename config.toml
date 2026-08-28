@@ -64,3 +64,9 @@ bundled_skill_dirs = []
 [models]
 default = "grok-4.6"
 default_reasoning_effort = "high"
+
+# Grok expands $$ in inline commands, so Claude/Supacode OSC hooks never
+# find a TTY. Use ~/.grok/hooks/supacode-osc.json instead. Claude Code still
+# reads ~/.claude/settings.json on its own.
+[compat.claude]
+hooks = false

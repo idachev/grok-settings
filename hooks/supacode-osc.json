@@ -1,0 +1,147 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh busy",
+            "timeout": 10,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "AskUserQuestion|ExitPlanMode|ask_user_question|exit_plan_mode",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh awaiting_input",
+            "timeout": 5,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "idle_prompt|permission_prompt|elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh notify",
+            "timeout": 10,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh stop",
+            "timeout": 10,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh error",
+            "timeout": 10,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ],
+    "StopCancelled": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh idle",
+            "timeout": 5,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.grok/hooks/supacode-osc.sh session_end",
+            "timeout": 5,
+            "env": {
+              "SUPACODE_REPO_ID": "${SUPACODE_REPO_ID}",
+              "SUPACODE_ROOT_PATH": "${SUPACODE_ROOT_PATH}",
+              "SUPACODE_SOCKET_PATH": "${SUPACODE_SOCKET_PATH}",
+              "SUPACODE_SURFACE_ID": "${SUPACODE_SURFACE_ID}",
+              "SUPACODE_TAB_ID": "${SUPACODE_TAB_ID}",
+              "SUPACODE_WORKTREE_ID": "${SUPACODE_WORKTREE_ID}",
+              "SUPACODE_WORKTREE_PATH": "${SUPACODE_WORKTREE_PATH}"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
